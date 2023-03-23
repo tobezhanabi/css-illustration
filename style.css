@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+
+  box-shadow: none;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Rubik", sans-serif;
+  place-content: center;
+  display: grid;
+  min-height: 100vh;
+  background-color: gainsboro;
+}
+
+main {
+  background-color: white;
+  width: 1200px;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  gap: 50px;
+}
+
+.cube-1,
+.cube-2 {
+  width: 300px;
+  position: absolute;
+  height: 600px;
+  border-radius: 0px 0px 145px 145px;
+  -webkit-border-radius: 0px 0px 145px 145px;
+  -moz-border-radius: 0px 0px 145px 145px;
+
+  background: linear-gradient(
+    -318deg,
+    rgba(136, 56, 255, 1) 27%,
+    rgba(233, 66, 255, 1) 58%
+  );
+}
+
+.cube-2 {
+  bottom: 0;
+  right: 0px;
+  overflow: hidden;
+  opacity: 0.1;
+  border-radius: 145px 145px 0px 0px;
+  -webkit-border-radius: 145px 145px 0px 0px;
+  -moz-border-radius: 145px 145px 0px 0px;
+  -ms-border-radius: 145px 145px 0px 0px;
+  -o-border-radius: 145px 145px 0px 0px;
+}
+.text {
+  word-wrap: break-word;
+  width: 430px;
+  margin-top: 200px;
+  margin-right: 140px;
+  position: absolute;
+  right: 0;
+}
+
+.phone {
+  background-color: white;
+  height: 520px;
+  border-radius: 30px;
+  width: 280px;
+  top: 10%;
+  left: 22%;
+  position: absolute;
+  z-index: 1000;
+  border: none;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  box-shadow: 10px 1px 29px 7px rgba(0, 0, 0, 0.64);
+  -webkit-box-shadow: 10px 1px 29px 7px rgba(0, 0, 0, 0.64);
+}
+
+.phone-screen {
+  height: 500px;
+  border-radius: 30px;
+  width: 260px;
+  background-color: hsl(270, 20%, 96%);
+  position: absolute;
+
+  bottom: 2%;
+  left: 3.5%;
+}
+
+.phone-top-place {
+  background: linear-gradient(
+    138deg,
+    rgba(136, 56, 255, 1) 27%,
+    rgba(233, 66, 255, 1) 58%
+  );
+  width: 260px;
+  position: absolute;
+  height: 70px;
+  border-radius: 30px 30px 0px 0px;
+  top: 0;
+  -webkit-border-radius: 30px 30px 0px 0px;
+  -moz-border-radius: 30px 30px 0px 0px;
+  -ms-border-radius: 30px 30px 0px 0px;
+  -o-border-radius: 30px 30px 0px 0px;
+}
+.phone-camera-place {
+  width: 180px;
+  height: 25px;
+  border-radius: 5px 5px 20px 20px;
+  position: absolute;
+  top: -7px;
+  right: 40px;
+  -webkit-border-radius: 5px 5px 20px 20px;
+  -moz-border-radius: 5px 5px 20px 20px;
+  -ms-border-radius: 5px 5px 20px 20px;
+  -o-border-radius: 5px 5px 20px 20px;
+  background-color: white;
+}
+
+.user-details {
+  display: flex;
+  position: absolute;
+  top: 30px;
+  gap: 10px;
+}
+
+.user-details img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid lime;
+  border-radius: 50%;
+}
+.username {
+  color: white;
+  margin-right: 30px;
+}
+.username h1 {
+  font-size: 12px;
+}
+
+.username p {
+  font-size: 9px;
+}
+.fa {
+  color: white;
+}
+.fa-chevron-left {
+  height: 10px;
+
+  font-size: 12px;
+  margin: 10px;
+}
+
+.fa-ellipsis-v {
+  margin: 10px 25px;
+}
+.first-message,
+.second-message,
+.last-message {
+  word-wrap: break-word;
+  position: absolute;
+  top: 80px;
+  width: 130px;
+
+  padding: 5px;
+  text-align: flex-start;
+  border-radius: 10px 20px 10px 0px;
+  margin-left: 10px;
+  background-color: hsl(294, 20%, 90%);
+  color: hsl(276, 55%, 52%);
+  font-size: 9px;
+  -webkit-border-radius: 10px 20px 10px 0px;
+  -moz-border-radius: 10px 20px 10px 0px;
+  -ms-border-radius: 10px 20px 10px 0px;
+  -o-border-radius: 10px 20px 10px 0px;
+}
+
+.second-message {
+  position: absolute;
+  top: 140px;
+}
+.picture {
+  display: flex;
+  position: absolute;
+  top: 190px;
+  right: 0;
+}
+
+.picture img {
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.sender-first-message,
+.sender-second-message {
+  position: absolute;
+  top: 250px;
+  right: 0;
+  background-color: white;
+  color: black;
+  font-size: 9px;
+  padding: 5px;
+  word-wrap: break-word;
+  width: 150px;
+  text-align: flex-start;
+  margin-right: 5px;
+  border-radius: 10px 20px 0px 20px;
+  -webkit-border-radius: 10px 20px 0px 20px;
+  -moz-border-radius: 10px 20px 0px 20px;
+  -ms-border-radius: 10px 20px 0px 20px;
+  -o-border-radius: 10px 20px 0px 20px;
+}
+
+.sender-second-message {
+  top: 290px;
+  width: 100px;
+}
+
+.last-message {
+  top: 320px;
+  width: 135px;
+}
+
+.price-section,
+.price-section2 {
+  background: linear-gradient(
+    -138deg,
+    rgba(136, 56, 255, 1) 27%,
+    rgba(233, 66, 255, 1) 58%
+  );
+  width: 190px;
+  height: 30px;
+  display: flex;
+  color: white;
+  margin-left: 5px;
+  top: 380px;
+  border-radius: 10px 10px 10px 0px;
+  position: absolute;
+  -webkit-border-radius: 10px 10px 10px 0px;
+  -moz-border-radius: 10px 10px 10px 0px;
+  -ms-border-radius: 10px 10px 10px 0px;
+  -o-border-radius: 10px 10px 10px 0px;
+}
+
+.price-section2 {
+  top: 420px;
+}
+.price-section p,
+.price-section2 p {
+  font-size: 10px;
+  margin: 7px 20px 7px 0px;
+}
+
+.price-section h3,
+.price-section2 h3 {
+  font-size: 15px;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  margin: 7px 10px;
+  border: 1px solid #fff;
+}
+
+.typing-message {
+  position: absolute;
+  background-color: white;
+  width: 210px;
+  /* height: 35px; */
+  top: 457px;
+  left: 25px;
+  font-size: 10px;
+  padding: 10px 20px;
+  color: hsl(300, 2%, 11%);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.fa-chevron-right {
+  color: white;
+  background-color: hsl(271, 36%, 24%);
+  border-radius: 50%;
+  position: absolute;
+  padding: 7px 8.5px;
+  right: 0;
+  top: 15%;
+  z-index: 1000;
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+@media (max-width: 375px) {
+  main {
+    width: 375px;
+    height: 900px;
+    display: block;
+  }
+  .cube-1,
+  .cube-2 {
+    width: 300px;
+    /* margin-right: 200px; */
+    height: 500px;
+  }
+
+  .cube-1 {
+    left: -90px;
+  }
+  .cube-2 {
+    right: -90px;
+  }
+  .phone {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+  }
+  .text {
+    word-wrap: break-word;
+    width: 300px;
+    opacity: 0.7;
+    margin-right: 140px;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    left: 10%;
+  }
+}
