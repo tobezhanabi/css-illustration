@@ -316,6 +316,7 @@ main {
     width: 375px;
     height: 900px;
     display: block;
+    overflow: hidden;
   }
   .cube-1,
   .cube-2 {
@@ -328,6 +329,7 @@ main {
     left: -90px;
   }
   .cube-2 {
+    height: 400px;
     right: -90px;
   }
   .phone {
